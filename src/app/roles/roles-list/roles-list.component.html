@@ -1,0 +1,31 @@
+<h2>Roles</h2>
+
+<div>
+  <label>Role Enum:
+    <input #roleEnum />
+  </label>
+  
+  <label>Role Name:
+    <input #roleName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="createRole(roleEnum.value, roleName.value); roleName.value=''">
+    Creat new Role
+  </button>
+</div>
+
+<ul class="roles">
+  <li *ngFor="let role of roles$ | async"
+    [class.selected]="role._id === selectedId">
+    <a [routerLink]="['/role-detail', role._id]">
+      <!-- <a routerLink="/role-detail/{{role._id}}"> -->
+      <span class="badge-id">{{role._id}}</span>
+      <span class="badge-enum">{{role.roleEnum}}</span>
+      <span class="badge-name">{{role.roleName}}</span>
+    </a>
+    <button class="delete" title="delete role"
+      (click)="deleteRole(role)">x</button>
+  </li>
+</ul>
+
+<button class="back" routerLink="/sidekicks">Go to sidekicks</button>

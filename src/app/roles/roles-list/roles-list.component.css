@@ -1,0 +1,133 @@
+/* HeroesComponent's private CSS styles */
+.roles {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 40em;
+  }
+  .roles li {
+    cursor: pointer;
+    position: relative;
+    left: 30;
+    background-color: rgb(17, 116, 50);
+    margin: .5em;
+    padding: .3em 0;
+    height: 2.3em;
+    border-radius: 4px;
+  }
+  
+  .roles li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  .roles li.selected {
+    background-color: #CFD8DC;
+    color: white;
+  }
+  .roles li.selected:hover {
+    background-color: #BBD8DC;
+    color: white;
+  }
+
+  .roles a {
+    color: rgb(184, 212, 20);
+    text-decoration: none;
+    position: relative;
+    display: block;
+    width: 330px;
+  }
+  
+  .roles a:hover {
+    color:#273002;
+  }
+
+  .roles .badge-id {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color:#992d5f;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    width: 200px;
+    text-align: right;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+  .roles .badge-enum {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color:#2e8aec;
+    line-height: 1em;
+    position: relative;
+    left: 0px;
+    top: -2px;
+    height: 2em;
+    width: 26px;
+    text-align: right;
+    margin-right: .8em;
+    border-radius: 4px 4px 4px 4px;
+  }
+  .roles .badge-name {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color:#2e8aec;
+    line-height: 1em;
+    position: relative;
+    left: 290px;
+    top: -38px;
+    height: 1.8em;
+    width: 150px;
+    text-align: right;
+    margin-right: .8em;
+    border-radius: 4px 4px 4px 4px;
+  }
+  
+  button {
+    background-color: rgb(134, 126, 126);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial;
+  }
+  
+  button:hover {
+    background-color: #91cde7;
+  }
+  
+  button.delete {
+    position: relative;
+    left: 500px;
+    top: -66px;
+    background-color: gray !important;
+    color: white;
+  }
+  
+  button.back {
+    background-color: rgb(134, 126, 126);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial;
+    height: 40px;
+  }
+  
+  button.back:hover {
+    background-color: #91cde7;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial;
+    height: 40px;
+  }

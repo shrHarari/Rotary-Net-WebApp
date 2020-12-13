@@ -1,0 +1,22 @@
+
+<div *ngIf="role$ | async as role">
+
+  <h2>{{role.roleName | uppercase}} Details</h2>
+  <div>
+    <span>Role Id: </span>{{ role._id }}
+  </div>
+
+  <div>
+    <label>Role Name: </label>
+    <input [(ngModel)]="role.roleName" placeholder="roleName"/>
+  </div>
+
+  <p>
+    <button (click)="goBackToRolesList(role)">go back</button>
+  </p>
+
+  <p>
+    <button (click)="save(role)">save</button>
+  </p>
+</div>
+  
